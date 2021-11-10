@@ -1,8 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <unordered_map>
-
-using namespace std;
+#include "common_include.hpp"
 
 class Solution {
 public:
@@ -28,11 +24,6 @@ TestCase g_test_cases[] = {
 	TestCase{new vector<int>{2, 7, 11, 15}, 9},
 	TestCase{new vector<int>{2, 7, 11, 15}, 18},
 };
-
-void print_ivec(const vector<int> &v) {
-	copy(v.begin(), v.end(), ostream_iterator<int>(cout, ","));
-//	for(const auto &i : v) { cout << i << ","; }
-}
 
 int main() {
 	Solution sol;
