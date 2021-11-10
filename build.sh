@@ -16,6 +16,7 @@ function build_many()
 }
 
 arg=$1
+cd `dirname $0`
 if [ "$arg" = "" ]; then
 	echo "begin to build latest modified ...."
 	files=`ls -t src/*.cpp | head -1`
