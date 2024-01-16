@@ -38,25 +38,10 @@ struct TestCase {
 };
 
 TestCase g_test_cases[] = {
-	TestCase{new vector<int>{1, 3, 4, 3, 9, 1}, 12},
-	TestCase{new vector<int>{1, 3, 4, 3, 9, 1}, 8},
-	TestCase{new vector<int>{1, 3, 4, 3, 9, 1}, 10},
 };
 
 int main() {
 	srand(time(nullptr));
 
-	Solution sol;
-	/*
-	int i = 0;
-	for (const TestCase tc : g_test_cases) {
-		vector<int> ans = sol.sub_array_sum(*tc.pnums, tc.target);
-		cout << "case " << ++i << " [";
-		print_ivec(*tc.pnums);
-		cout << "]|" << tc.target << ": [";
-		print_ivec(ans);
-		cout << "]" << endl;
-	}
-	*/
 	return 0;
 }
